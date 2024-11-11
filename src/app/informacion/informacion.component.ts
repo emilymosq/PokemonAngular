@@ -8,9 +8,9 @@ import { Pokemon } from '../services/interfaces/pokemon'
 })
 export class InformacionComponent {
   pokemons: Pokemon[] = [
-    { id: 1, nombre: 'Bulbasaur', descripcion: 'Es un Pokémon de tipo planta y venenoso.', image_url: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png' },
-    { id: 2, nombre: 'Charmander', descripcion: 'Es un Pokémon de tipo fuego.', image_url: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png' },
-    { id: 3, nombre: 'Squirtle', descripcion: 'Es un Pokémon de tipo agua.', image_url: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/007.png' },
-    { id: 4, nombre: 'Pikachu', descripcion: 'Es un Pokémon de tipo electrico.', image_url: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png' },
+    { id: 1, nombre: 'Vaporeon', descripcion: 'Es un Pokémon de tipo agua.', image_url: '1.jpg' },
+    { id: 2, nombre: 'Pikachu', descripcion: 'Es un Pokémon de tipo electrico.', image_url: '2.jpg' },
+    { id: 3, nombre: 'Bulbasaur', descripcion: 'Es un Pokémon de tipo planta.', image_url: '3.jpg' },
+    { id: 4, nombre: 'Charmander', descripcion: 'Es un Pokémon de tipo fuego.', image_url: '4.jpg' },
   ]
 }

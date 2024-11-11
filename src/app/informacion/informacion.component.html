@@ -1,1 +1,7 @@
-<p>informacion works!</p>
+<div *ngIf="pokemons.length > 0">
+  <div *ngFor="let pokemon of pokemons" class="pokemon">
+    <p>{{pokemon.nombre}}</p>
+    <p>{{pokemon.descripcion}}</p>
+    <img src="{{pokemon.image_url}}" alt="gf">
+  </div>
+</div>

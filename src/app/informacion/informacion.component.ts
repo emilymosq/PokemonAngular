@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Pokemon } from '../services/interfaces/pokemon'
 import {InformacionService} from '../services/modales/informacion.service'
+import {EnviarPokemonService} from '../services/pokemon/enviar-pokemon.service'
 
 @Component({
   selector: 'app-informacion',
@@ -12,14 +13,17 @@ export class InformacionComponent implements OnInit{
 
   constructor(
     private informacionService: InformacionService,
+    private enviarPokemonService: EnviarPokemonService,
     ){}
+
   ngOnInit() {
     this.informacionService.modal$.subscribe(modal => {
       this.mostrarModal = modal;
       })
     }
 
-  toggleModal() {
+  toggleModal(pk: Pokemon) {
+    this.enviarPokemonService.updatePokemon(pk);
     this.informacionService.toggleModal(true);
    }
 

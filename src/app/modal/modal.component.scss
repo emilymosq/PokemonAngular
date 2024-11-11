@@ -1,0 +1,48 @@
+.contenedor-modal{
+
+  &, *{
+    box-sizing: border-box;
+    }
+
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  width:100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left:0;
+  z-index: 999;
+
+
+  div{
+    background-color: #fff;
+    width:90%;
+    height: auto;
+    position: relative;
+    margin: 80px auto;
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 10px;
+
+    }
+
+  img{
+    width: 80%;
+    height: auto;
+    max-width: 300px;
+    margin: 10px auto 10px;
+    }
+    .button-close{
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      cursor: pointer;
+      }
+
+    h2{
+      width:100%;
+      margin: 15px 0 10px;
+      border-bottom: 1px solid lightgray;
+      padding-bottom: 10px;
+      }
+  }

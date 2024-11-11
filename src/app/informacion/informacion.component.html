@@ -3,5 +3,10 @@
     <h2>{{pokemon.nombre}}</h2>
     <p>{{pokemon.descripcion}}</p>
     <img src="{{pokemon.image_url}}" alt="pokemon">
+    <div class="showModal">
+      <button type="button" (click)="toggleModal()">Ver info</button>
+    </div>
   </div>
 </div>
+
+<app-modal *ngIf="mostrarModal"></app-modal>

@@ -1,14 +1,22 @@
 .contenedor-pokemon{
   width: 100%;
-  max-width: 400px;
   margin: 30px auto 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
+  grid-gap: 20px 25px;
 
-  .pokemon {
-    padding: 5px;
-    text-align: center;
+  div {
+     border-radius: 10px;
+        box-shadow: 0 2px 3px #262626;
+        padding: 10px 15px;
+        position: relative;
+  }
+
+.pokemon{
+  padding: 5px;
+  text-align: center;
+
   }
 
   h2, p{
@@ -19,12 +27,12 @@
     img{
       width: 100%;
       height: auto;
-      max-width: 150px;
+      max-width: 200px;
       margin: 0 auto;
     }
 
   button{
       display: block;
-      margin: 0 auto;
+      margin: 10px auto;
     }
   }

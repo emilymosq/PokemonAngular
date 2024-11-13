@@ -66,7 +66,9 @@ export class InformacionComponent implements OnInit{
 
   detallesPokemon(pk: PokemonApi){
     this.pokemonDetailService.updatePokemonApi(pk)
-    this.router.navigate(['detalles'])
-    }
+    //this.router.navigate([`/detalles/${pk.name}`])
+    window.open(`/detalles/${pk.name}`, '_blank');
+
+  }
 }
 

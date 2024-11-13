@@ -1,0 +1,26 @@
+.contenedor-detalle-pokemon {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+    .imagen-pokemon {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+  .detalles-pokemon {
+    margin-top: 25px;
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+

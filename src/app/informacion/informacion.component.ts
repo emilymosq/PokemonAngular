@@ -4,6 +4,7 @@ import {InformacionService} from '../services/modales/informacion.service'
 import {EnviarPokemonService} from '../services/pokemon/enviar-pokemon.service'
 import {PokemonApiService} from '../services/pokemon/pokemon-api.service'
 import {Router} from '@angular/router'
+import {PokemonDetailService} from '../services/pokemon/pokemon-detail.service';
 
 @Component({
   selector: 'app-informacion',
@@ -21,6 +22,7 @@ export class InformacionComponent implements OnInit{
     private informacionService: InformacionService,
     private enviarPokemonService: EnviarPokemonService,
     private pokemonApiService: PokemonApiService,
+    private pokemonDetailService: PokemonDetailService,
     private router: Router
     ){}
 
@@ -62,9 +64,9 @@ export class InformacionComponent implements OnInit{
     { id: 4, nombre: 'Charmander', descripcion: 'Es un Pokémon de tipo fuego.', image_url: '4.jpg' },
   ]
 
-  detallesPokemon(nombre: string){
-    //debemos enviar el nombre a traves de BehavidSubject al componente pokemon-detail
-   this.router.navigate(['detalles'])
+  detallesPokemon(pk: PokemonApi){
+    this.pokemonDetailService.updatePokemonApi(pk)
+    this.router.navigate(['detalles'])
     }
 }
 

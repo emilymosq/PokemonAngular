@@ -10,7 +10,7 @@
 <div *ngIf="pokemonsApi.length > 0" class="contenedor-pokemon">
   <div *ngFor="let pokemon of pokemonsApi" class="pokemon">
     <h2>{{pokemon.name}}</h2>
-    <button type="button" (click)="detallesPokemon(pokemon.name)">Ver info</button>
+    <button type="button" (click)="detallesPokemon(pokemon)">Ver info</button>
   </div>
 </div>
 <app-modal *ngIf="mostrarModal"></app-modal>
